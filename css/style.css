@@ -18,7 +18,7 @@ h2 {
 }
 
 .main > p {
-    padding: 0 .8em;
+    padding: 0 .8em .8em .8em;
 }
 
 p, ul, li, a {
@@ -29,8 +29,8 @@ p, ul, li, a {
 body {
     margin: 0;
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-wrap: wrap;
+    
     background-image: url(../img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -44,6 +44,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 7em;
+    width: 100vw;
 }
 
 ul {
@@ -96,15 +97,16 @@ li {
 /* section style and layout */
 
 section {
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 20px;
-
+    
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    height: calc(100vh - 13em);
+    min-height: 100vh;
     padding: 10px 0;
 }
 
@@ -168,8 +170,8 @@ footer {
     background: rgb(90, 88, 88);
     height: 5em;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100vw;
 }
 
@@ -177,7 +179,7 @@ footer > p {
     margin-top: 1.5em;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 590px) {
     section {
         display: flex;
         flex-direction: column;
@@ -218,5 +220,9 @@ footer > p {
 
     .main > a:active, .navlink:active {
         color: rgb(218, 135, 58);
+    }
+
+    .info:hover, .button:hover, .last:hover {
+        background: rgba(212, 207, 207, .7);
     }
 }
