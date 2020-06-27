@@ -181,8 +181,11 @@ footer > p {
     section {
         display: flex;
         flex-direction: column;
-        margin: 20px;
         height: 100%;
+    }
+
+    .main {
+        margin: 10px 0;
     }
 
     p {
