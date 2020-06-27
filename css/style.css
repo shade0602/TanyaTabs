@@ -181,6 +181,7 @@ footer > p {
     section {
         display: flex;
         flex-direction: column;
+        column-gap: 20px;
         height: 100%;
     }
 
@@ -202,10 +203,6 @@ footer > p {
 
     footer > p {
         margin: 0.5em;
-    }
-
-    .button, .last {
-        
     }
 
     .main > a {
