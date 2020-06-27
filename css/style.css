@@ -177,7 +177,7 @@ footer > p {
     margin-top: 1.5em;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 736px) {
     section {
         display: flex;
         flex-direction: column;
